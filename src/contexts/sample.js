@@ -14,4 +14,19 @@ class SampleProvider extends Component {
             this.setState({ value });
         }
     }
+
+    render() {
+        const { state, actions } = this;
+        const value = { state, action };
+        return (
+            <Provider value= {value}>
+                {this.props.children}
+            </Provider>
+        )
+    }
 }
+
+export {
+    SampleProvider,
+    SampleConsumer,
+};
