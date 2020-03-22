@@ -16,7 +16,7 @@ class SampleProvider extends Component {
     }
 
     render() {
-        const { state, actions } = this;
+        const { state, action } = this;
         const value = { state, action };
         return (
             <Provider value= {value}>
